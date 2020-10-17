@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/metisMenu.min.js"></script>
+    <script src="/js/startmin.js"></script>
+
+    <title>Care patients</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/metisMenu.min.css" rel="stylesheet">
+    <link href="/css/timeline.css" rel="stylesheet">
+    <link href="/css/startmin.css" rel="stylesheet">
+    <link href="/css/morris.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse"role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/app"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS07bHrJtDIHIPrGzd0ZppLzmfaq5shvw1adg&usqp=CAU" alt="Care Patients Manager"></a>
+            </div>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+  <div class="collapse navbar-collapse" >
+      <ul class="nav navbar-nav">
+            <li class="nav-li">
+                <a href="/app" class="active"><i class="fa fa-bar-chart fa-fw"></i> Dashboard    </a>
+            </li>
+            <li class="nav-li">
+                <a href="/app/addpatient" class="active"><i class="fa fa-ambulance fa-fw"></i>  Add COVID-19 patient   </a>
+            </li>
+            <li class="nav-li">
+                <a href="/app/addsymptomPage" class="active"><i class="fa fa-dashboard fa-fw"></i>    Add symptom</a>
+            </li>
+            <li class="nav-li">
+                <a href="/app/adduserPage" class="active"><i class="fa fa-dashboard fa-fw"></i>    Add user</a>
+            </li>
+            <li class="nav-li">
+                <a href="/app/addroomPage" class="active"><i class="fa fa-dashboard fa-fw"></i>    Add room</a>
+            </li>
+            <li class="nav-li">
+                <a href="/app/covid" class="active"><i class="fa fa-dashboard fa-fw"></i>   Inventory & Guidelines</a>
+            </li>
+     
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="/app/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+      
+    </ul>
+  </div>
+        </nav>  
+
+       
+
+            {{#if success_msg}}
+                   <div class="alert alert-success">{{success_msg}}</div>
+                 {{/if}}
+
+                 {{#if error_msg}}
+                   <div class="alert alert-danger">{{error_msg}}</div>
+                 {{/if}}
+
+                 {{#if error}}
+                   <div class="alert alert-danger">{{error}}</div>
+                 {{/if}}
+
+                 {{#if message}}
+                     <div class="alert alert-danger">{{message}}</div>
+                 {{/if}}
+
+                 {{#each errors}}
+                     <div class="alert alert-danger">{{message}}</div>
+                 {{/each}}
+
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
