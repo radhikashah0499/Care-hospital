@@ -21,7 +21,7 @@ The times being as they are of a global contagious pandemic, room and equipment 
 
 ## How to use it 📖
 ### Dashboard
-![alternativetext](C:\Users\hp\Downloads/Homepage.png)
+![DashBoard](C:\Users\hp\Downloads/Homepage.png)
 Data about patients and rooms is available here. The page is split into three tables.  
 The first table gives the details of the patients already with room.  
 The second table shows patients waiting.  
